@@ -3,20 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina</title>
+    <title>Página Html Esencial</title>
     <style>
         .center{
             font-family: Arial;
             text-align: center;
+            color: red; 
         }
+
+        .tipo{
+            font-family: Arial, sans-serif;
+        }
+
+       .formulario {
+    border: 2px solid blue; 
+    padding: 60px;
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+}
     </style>
 </head>
 <body>
-    <h1 class="center">Etiquetas escenciales de HTML</h1>
-    <br>
-    <p>Que es !DOCTYPE html <br>
+
+    <form action="" class="formulario">
+    <h1 class="center">Etiquetas escenciales de HTML</h1>    
+    <p class="tipo">¿Para qué sirve <b>!DOCTYPE html</b>? <br>
         -indica al navegador que el documento está escrito en HTML5 <br>
+        -No tiene atributo solo indica que el documento es HTML5.
     </p>
+
+    <p class="tipo">¿Para qué sirve <b>html</b>? <br>
+        -sirve como una instrucción para el navegador sobre cómo mostrar un elemento en una página web, 
+        actuando como un marcador que define la estructura y el formato del contenido <br>
+        -Su atributo lang → define el idioma del contenido. <b>html lang="es"</b>
+    </p>
+
+    <p class="tipo">¿Para qué sirve <b>head</b>? <br>
+        -sirve como un contenedor para los metadatos del documento web, 
+        es decir, información sobre la página que no se muestra directamente al usuario. <br>
+        -No tiene atributos “obligatorios” usuales, pero dentro se incluyen etiquetas con atributos como <b>meta charset="UTF-8"</b>.
+        codificación que puede representar casi todos los caracteres de todos los idiomas, incluyendo acentos, símbolos, emojis, etc.
+    </p>
+
+    <p class="tipo">¿Para qué sirve <b>body</b>? <br>
+        -Es el contenedor principal de todo lo que se ve en una página web. 
+        Todo lo que quieres que el usuario vea en el navegador
+        como texto, imágenes, enlaces, formularios, tablas y otros elementos interactivos
+        debe ir dentro de esta etiqueta. <br>
+        -No tiene atributos obligatorios, pero puede tener: <br>
+        -class → para estilos CSS. <br>
+        -id → para identificar el cuerpo. <br>
+        -style → para estilos en línea.
+    </p>
+
+    <p class="tipo">¿Para qué sirve <b>h1, h2, ..., h6</b>? <br>
+        -se utilizan para definir encabezados y subtítulos en un documento web, 
+        estableciendo una jerarquía de importancia y organización del contenido. <br>
+        -Sus atributos son: <br>
+        -class → aplicar estilos CSS. <br>
+        -id → identificar el encabezado. <br>
+        -style → cambiar estilo directamente. 
+        <h1 class="tipo">h1</h1> 
+        <h2 class="tipo">h2</h2>
+        <h3 class="tipo">h3</h3>
+        <h4 class="tipo">h4</h4>
+        <h5 class="tipo">h5</h5>
+        <h6 class="tipo">h6</h6>   
+    </p>
+
+    <p class="tipo">¿Para qué sirve <b>p</b>? <br>
+        -Al encerrar el texto entre las etiquetas indica al navegador que ese bloque de texto debe ser tratado como un párrafo, lo que
+         generalmente implica un espacio en blanco antes y después de cada uno, facilitando la lectura. <br>
+         -Sus atributos son: <br>
+        -class → aplicar estilos CSS. <br>
+        -id → identificar el párrafo. <br>
+        -style → estilos en línea.
+          <p class="tipo">apertura (p) y cierre (/p),</p> 
+     
+    </p>
+
+    <p class="tipo">¿Para qué sirve <b>a</b>? <br>
+        -se utiliza para crear enlaces hipertexto, permitiendo a los usuarios navegar entre diferentes páginas web. <br>
+         -Sus atributos son: <br>
+        -href → URL a la que apunta el enlace. <br>
+        -title → texto que aparece al pasar el mouse.
+        <a href="https://www.utez.edu.mx/"><h3 class="tipo">UTEZ</h3></a>
+    </p>
+
+    <p class="tipo">¿Para qué sirve <b>img</b>? <br>
+        -Esta etiqueta permite agregar visualmente contenido que enriquece la experiencia del usuario y mejora la comprensión de la información. <br> 
+        -Sus atributos son: <br>
+        -src → ruta de la imagen. <br>
+        -alt → texto alternativo.<br>
+        -width / height → tamaño de la imagen. <br>
+        <img src="imagen.jpg" alt="Imagen de Beru" height="150" width="150">
+    </p>
+
+    <p class="tipo">¿Para qué sirve <b>ol</b>? <br>
+        -crea listas ordenadas, donde los elementos se muestran con
+         una numeración secuencial, ya sea por números, letras o símbolos.
+        <h3 class="tipo">Lista de tareas</h3>
+        <ol class="tipo">
+        <li>Comprar leche</li>
+        <li>Hacer la tarea de matemáticas</li>
+        <li>Llamar a un amigo</li>
+        </ol>
+    </p>
+
+    <p class="tipo">¿Para qué sirve <b>ul</b>? <br>
+        -Agrupa elementos relacionados que no requieren una 
+        disposición numérica o alfabética, como una lista de compras etc.
+        <h3 class="tipo">Frutas favoritas</h3>
+        <ul class="tipo">
+        <li>Manzana</li>
+        <li>Plátano</li>
+        <li>Naranja</li>
+        </ul>
+    </p>
+
+    <p class="tipo">¿Para qué sirve <b>li</b>? <br>
+        -representa un elemento individual dentro de una lista, 
+        ya sea ordenada o no ordenada y solamente se utila dentro de las etiquetas <b>ol y ul</b> como en los ejemplos de arriba.
+    </p>
+
+    </form>
 
     
 </body>
