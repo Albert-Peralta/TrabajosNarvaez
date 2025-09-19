@@ -1,0 +1,10 @@
+
+.container {
+    text-align: center;
+  background: #c2c2c2;
+  width: 300px;
+  min-height: 250px;
+  color: white;
+  padding: 2rem;
+  
+}
